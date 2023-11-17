@@ -1,0 +1,20 @@
+NOTAS CLASE 2
+
+git init
+git status
+git add .
+git status
+git commit -m "comentario"
+INICIO DE REPOSITORIO ecommerce-react-noviembre (siempre iniciar git ahi para los cambios)
+-ls  (listar archivos)
+
+INICIAR EN OTRA PC
+1.copiar URL (clone)
+2.git clone URL
+3.entrar a la carpeta donde esta el proyecto
+4.npm instal
+5.npm run dev
+
+actualizar repos
+1.git init (en el repo inicializado)
+2.git pull origin main
