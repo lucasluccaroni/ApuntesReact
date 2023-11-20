@@ -5,13 +5,19 @@ git status
 git add .
 git status
 git commit -m "comentario"
+
+cd (nombre de carpeta)  -> IR PARA ADELANTE
+cd ..  ->  IR PARA ATRAS
+
 INICIO DE REPOSITORIO ecommerce-react-noviembre (siempre iniciar git ahi para los cambios)
+
 -ls  (listar archivos)
+La carpeta del proyecto, es la carpeta que cuando tiro el comandos "ls" me lista el package.json
 
 INICIAR EN OTRA PC
 1.copiar URL (clone)
 2.git clone URL
-3.entrar a la carpeta donde esta el proyecto
+3.entrar a la carpeta donde esta el proyecto (donde esta package.json en "ls")
 4.npm instal
 5.npm run dev
 
