@@ -1,5 +1,5 @@
 //CLASE5 - COMPONENTES II
-const { useState } = require("react")
+const { useState, useEffect } = require("react")
 
 
 //CHIDREN (min09)
@@ -71,3 +71,68 @@ return(
 //EXPLICADO MIN 40
 {show && <Layout/>} // El doble amperson (&&) en ternario seria un "if" sin "else". (Condicion a cumplir && accion si se cumple)
 {show ? <Layout/> : null} // Condicion a cumplir ? accion si se cumple : else
+
+
+
+
+//RENDER
+//El funcionamientod e react se basa en el cambio de estado.
+//Un cambio de estado lo que hace es avisarle a react que tiene que volver a generar una version de Virutal DOM para sincronizarla con el DOM REAL. Este proceso se llama "Render".
+//El "Render" es la ejecucion de las funciones de componentes desde donde ocurrió el cambio de estados y a todos sus hijos.
+//Estos componentes son objetos que forman el Virtual DOM.
+
+
+
+
+//RECONCILIACION
+//Es la sincronizacion entre el Virtual DOM y el DOM real.
+
+
+
+
+//HOOK useEffect
+//Hook que nos permite controlar los efectos secundarios provocados por cambios de estados.
+//Normalmente se utiliza para sincronizar componentes con sistemas externos (por ejemplo APIs). Tambien un sistema externo puede ser el navegador mismo, en el cual estamos ejecutando nuestra aplicación.
+//Este hook no va a retornar nignun valor.
+
+//ARGUMENTOS
+//Se le pasan DOS argumentos
+//1) Funcion donde se va a contener toda la logica que queremos controlar.
+//2) Array de dependencias. En este array vamos a indicar frente a qué estados nosotros queremos ejecutar la 1er función.
+//La funcion se va a ejecutar LUEGO de haberse montado el componente.
+
+//SINTAXIS
+//1)
+useEffect(() => {console.log("HOLA A TODOS")}) // → NO HAY ARRAY 2DO ARGUMENTO(array) - Se sincroniza con todos los estados superiores (no hay array).  
+//SI NO DEFINO EL ARRAY DE DEPENDENCIAS ES COMO SI NO ESTUVIERA EL useEffect, no tiene sentido.
+
+//2)
+useEffect(() => {console.log("HOLA A NADIE"), []}) // → ARRAY VACIO - No se sincroniza con ningun estado.
+
+//3)
+useEffect(() => {console.log("HOLA A VOS/USTEDES")},[estado, estados]) // → ARRAY CON ESTADO/S - Se sincroniza con los estados asignados.
+
+
+//Ej:
+useEffect(()=>{
+    console.log("HOLA")
+}, [])
+
+
+//FUNCION DE LIMPIEZA
+//El useEffect permite definir en la funcion de callback que yo le paso, un return.
+//Esta funcion de limpieza, esta accion se ejecuta al desmontarse el componente. Tambien hace una limpieza antes de volver a ejecutar de nuevo la funcion del efecto. Siempre frente a la ejecución de una accion, voy a tener una limpieza. 1 efecto → 1 limpieza / 2 efectos → 2 limpiezas.
+
+//SINTAXIS
+useEffect(() => {
+    console.log("HOLA A VOS/USTEDES")
+
+    return() =>{
+        console.log("limpieza")
+    }
+},[estado, estados])
+
+//No siempre se neceista utilizar la limpieza.
+
+
+//EJERCICIO CONTADOR DE VUELTAS VOD 1:45hs - CLASE 5 - 1:46
