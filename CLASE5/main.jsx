@@ -136,3 +136,22 @@ useEffect(() => {
 
 
 //EJERCICIO CONTADOR DE VUELTAS VOD 1:45hs - CLASE 5 - 1:46
+
+
+
+
+//setInterval()
+//Funcion que setea la accion que voy a ejecutar cada X tiempo que yo defina.
+//Se le pasan DOS argumentos
+//1) La accion a ejecutar.
+//2) El tiempo, que se define en milisegundos.
+
+//SINTAXIS
+setInterval(() =>{
+    console.log("hola") //accion a ejecutar
+}, 1000) //tiempo (1000 ms = 1s)
+
+
+//clearInterval()
+//A veces es conveniente poner el setInterval() dentro de una variable, por si quiero ejectutar el clearInterval(intervalId).
+//Reinicia el intervalo de tiempo
