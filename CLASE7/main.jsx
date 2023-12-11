@@ -141,14 +141,47 @@ Content-type: application/json → header
 
 
 
+//- PROYECTO FALSO MERCADOLIBRE
+
+
+
+
+//- FETCH
+//Funcion para hacer una request a traves del protocolo HTTP.
+//Recibe dos argumentos:
+//1) URL de consulta
+//2) Objeto de configuracion (un objeto)
+
+//1) La URL va entre comillas
+
+//2) Aca se puede configurar:
+// method: 'GET',     - El método (GET, PUSH, PUT, DELETE)
+// headers{ },        - Un objeto con los headers
+// body: ''           - El body, en caso de hacer un POST
+
+//? SI NO LE PASO EL OBJETO DE CONFIGURACION, .fecth() ASUME POR DEFAULT QUE EL METODO ES UN "GET".
+
+//? .fecth() SIEMPRE VA DENTRO DEUN useEffect()
+
+
+
+
+//!Clase 7 - 01:44
+
+
+
+
+
+
+
+
+
 
 
 //! ASDNASDAS
-//? DASÑKLJDASKDSADASDASDAS
-//? JKASDAS
-//* HJASDJKLASDJKLSADJKLADSKJLADSJKLASD
-//- JSADJASDASDASDASDAS
-
+//? JKASDASAS
+//* HJASDJKLA
+//- ASDASDASD
 
 
 
