@@ -166,10 +166,6 @@ Content-type: application/json → header
 
 
 
-//!Clase 7 - 01:44
-
-
-
 
 
 
