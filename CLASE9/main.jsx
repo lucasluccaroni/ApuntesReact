@@ -3,7 +3,7 @@
 
 //Conectar estados con la URL del navegador.
 
-//-ORGANIZACION DE LA APLICACION
+//- ORGANIZACION DE LA APLICACION
 // Organizada en diferentes funcionabilidades
 //*EJ: 
 //* Listar productos, hacer el checkout del producto, ver el listado de productos, ver listado de productos dentro del carrito, etc, todas funcionabilidades distintas.
