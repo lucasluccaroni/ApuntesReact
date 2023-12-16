@@ -57,7 +57,7 @@ console.log(referencia)  // {current: 10}
 useEffect(()=>{
     const handleClick = () => console.log("hice click")
 
-    boton = buttonRef.current
+    boton = buttonRef.current   // ACA TENGO EL BOTON
     boton.addEventListener("click", handleClick)
 
 
@@ -73,3 +73,42 @@ useEffect(()=>{
 
 //- getBoundingClientRect()
 // Metodo que permite obtener la posicion de un elemento.
+
+
+
+
+//-SYNTHETIC EVENTS
+//Son aquellos que nos devuelve React, y estan definidos dentro del JSX (onClick, onSubmit).
+// React estandariza estos datos y propiedades para que todos los navegadores devuelvan lo mismo, a pesar de estar desarrollados por empresas y equipos diferentes.
+//Todos los eventListener que ponga en el JSX, son eventos que maneja React.
+// *Ej: <button onClick{(e)=> console.log(e)}> Haz Click </button>  → muestra en consola "SynteticBaseEvent" (un objeto)
+// El que esta manejado en el JSX es sintetico, intevenido por React
+
+//* Ej2: handleClick = (e) => console.log(e) → muestra en al consola "Event" (un objeto)
+// El que esta manjeado manualmente es el evento estandar del DOM, lo devuelve el Navegador.
+
+
+
+
+//- e.stopPropagation()
+// Es un metodo que sirve para detener la propagacion de un evento hacia los ancestros del componente donde se ejecuta el mismo.
+
+
+
+
+//- COMPONENTES BASADOS EN ENVENTOS
+//El objetivo principal va a ser ejecutar un evento. EJ: <ItemCount/>, el cual su proposito es agregar los productos al carrito. Su objetivo es encargarse de manejar ese onClick en el boton.
+
+
+
+
+//- INTERCAMBIABILIDAD / AGNOSTIC BEHAVIOR
+// El concepto es intercambiar funcionabilidades en diferentes componentes sin muchoe esfuerzo. (VOD CLASE10 01:35 / 01:42)
+
+
+
+//-ORIENTACION A OBJETOS
+//Permite mover la logica compleja a compnentes de menor orden.
+//Si ambos se comportan igual, el parent no lo sabra aunque sus implementaciones sean distintas.
+//Permite que el parent se encargue del resultado final sin darle esa responsabilidad a sus children. (CLASE10 - 01:45).
+
