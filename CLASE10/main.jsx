@@ -103,7 +103,7 @@ useEffect(()=>{
 
 
 //- INTERCAMBIABILIDAD / AGNOSTIC BEHAVIOR
-// El concepto es intercambiar funcionabilidades en diferentes componentes sin muchoe esfuerzo. (VOD CLASE10 01:35 / 01:42)
+// El concepto es intercambiar funcionabilidades en diferentes componentes sin mucho esfuerzo. (VOD CLASE10 01:35 / 01:42)
 
 
 
