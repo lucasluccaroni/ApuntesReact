@@ -1,24 +1,24 @@
-//SERVICIO DE BACKEND - FIREBASE
-
-//! REPASO DE . MAP Y SPREAD OPERATOR, EJERCITAR JEMPLOS
+//CLASAE 12 - TECNICAS DE RENDERING
 
 
-//-FIREBASE 
-//hermano menor de Google Cloud
-//Backend as a service
+//-Tipos de rendering
+
+//1) If con retorno temprano
+
+//2) Operador ternario
 
 
 
-//-SDK
-//Conjunto de herramientas para desarrollar software
-//Libreria descargable en nuestro proyecto
-//Nos va a brindar funciones que nosotros vamos a ejecutar para comunicarnos con este backend (para hcer un POST, DELETE, GET, etc.)
 
-//? PROS Y CONTRAS
-/*
+//-RENDERING DE ESTILOS
+//Min 22
 
 
-*/
 
+//? Operaqdor nullish
+// El operador es ??
+// Solo tiene en cuenta que el valor sea null o undefined para mostrrar la respuesta.
+//*Ej:
+const algo = ""
+console.log(algo ?? "si no hay nada mostra esto")
 
-//
